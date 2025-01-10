@@ -1,0 +1,105 @@
+.sonda {
+    grid-area: sonda;
+}
+
+.carrefour {
+    grid-area: carrefour;
+}
+
+.shopping {
+    grid-area: shopping;
+}
+
+.avenida {
+    grid-area: avenida;
+}
+
+.predio {
+    grid-area: predio;
+}
+
+.padaria {
+    grid-area: padaria;
+}
+
+.galeria_title {
+    grid-area: galeria_title;
+    display: grid;
+    grid-template-columns: max-content 300px;
+    column-gap: 30px;
+    margin-left: 10%;
+    align-items: center;
+    color: white;
+
+}
+
+.galeria_title p {
+    font-family: 'g-light';
+}
+
+
+.galeria_img .item img {
+    width: 100%;
+    height: 100%;
+}
+
+.galeria_img {
+    display: grid;
+    grid-template-areas:
+        'galeria_title galeria_title galeria_title'
+        'sonda shopping predio'
+        'sonda shopping padaria'
+        'carrefour shopping padaria'
+        'carrefour avenida padaria'
+    ;
+    grid-gap: 30px;
+}
+
+.galeria {
+    background: url('../image/galeria/background.png');
+    background-size: 100% 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+@media only screen and (max-width: 782px) {
+
+    .galeria {
+        background: var(--cor-azul);
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+
+    .galeria_title {
+        grid-area: galeria_title;
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 30px;
+        margin-left: 10%;
+        align-items: center;
+        color: white;
+    }
+
+    .galeria_title p {
+        font-family: 'g-light';
+        width: 80%;
+    }
+
+    .galeria_img {
+        display: grid;
+        grid-template-areas: 
+        'galeria_title galeria_title galeria_title' 
+        'sonda shopping shopping' 
+        'sonda shopping shopping' 
+        'carrefour shopping .' 
+        'carrefour avenida .' 
+        'predio padaria .' 
+        'predio padaria .' 
+        'predio padaria .';
+    
+            
+        grid-gap: 10px;
+    }
+}

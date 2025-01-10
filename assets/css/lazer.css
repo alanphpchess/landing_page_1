@@ -1,0 +1,102 @@
+.lazer {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.lazer .text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lazer .title {
+    font-family: 'l-medium';
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--cor-preta);
+    font-size: 1rem;
+}
+
+.lazer .subtitle {
+    font-family: 'l-bold';
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.lazer .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 11px;
+}
+
+.itens_lazer {
+    display: grid;
+    grid-template-columns: repeat(9, 7%);
+    column-gap: 2%;
+    row-gap: 20px;
+    margin-top: 31px;
+    font-family: 'l-bold';
+justify-content:center;
+}
+
+.lazer .carrosel img {
+    width: 95%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.itens_lazer .item img {
+    width: 50px;
+}
+
+.carrossel {
+    display: flex;
+    gap: 20px;
+    /* 20px de espaço entre os slides */
+}
+
+.carrossel .slick-slide {
+    margin: 0;
+    /* Remover margens adicionais */
+}
+
+.slider_img{
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .itens_lazer {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        column-gap: 2%;
+        row-gap: 20px;
+        margin-top: 31px;
+        font-family: 'l-bold';
+    }
+
+    .lazer .subtitle {
+        font-family: 'l-bold';
+        font-size: 2rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: auto;
+    }
+    
+
+
+}

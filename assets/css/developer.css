@@ -1,0 +1,17 @@
+.developer{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    background-color: #1B374A;
+color: white;
+}
+
+.developer p{
+    display: flex;
+    column-gap: 7px;
+    align-content: center;
+    justify-content: flex-end;
+    padding-top: 5px;
+    font-family: 'g-book';
+    font-size: 0.9rem;
+}

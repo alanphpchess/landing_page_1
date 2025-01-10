@@ -1,0 +1,41 @@
+.tour{
+   padding-top: 50px;
+   padding-bottom: 50px; 
+}
+
+.tour .text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tour .tour_img{
+    width: 100%;
+}
+.tour .title{
+    font-family: 'l-medium';
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--cor-preta);
+    font-size: 1rem;
+}
+
+.tour .subtitle{
+    font-family: 'l-bold';
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    margin-bottom: 40px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .tour img{
+        height: auto;
+    }
+
+}
