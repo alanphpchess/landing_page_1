@@ -1,0 +1,42 @@
+.status{
+    display: grid;
+    grid-template-columns: 60%;
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 100px;
+    background-color: white !important;
+}
+
+.title_status{
+    font-size: 2rem;
+        font-family: 'l-light';
+    text-align: center;
+    margin-bottom: 10px;  
+}
+
+.title_item_status{
+    margin-bottom: 2px;
+        font-family: 'g-book';
+    
+}
+
+.item_status{
+    margin-bottom: 10px;
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .status{
+        display: grid;
+        grid-template-columns: 75%;
+        justify-content: center;
+        padding-top: 50px;
+        margin-bottom: 50px;
+        background-color: white !important;
+    }
+
+    .title_status img{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,46 @@
+.terreno{
+    background-color: var(--cor-verde);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align:center;
+}
+
+.fixed {
+    position: fixed; /* Aplica a posição fixa quando a rolagem desce */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o elemento ficará por cima de outros conteúdos */
+}
+
+.terreno p span{
+font-family: 'l-black';
+
+}
+
+.terreno p:first-child{
+    font-family: 'l-semibold';
+    font-size: 1.3rem;
+}
+
+.terreno p:nth-child(2){
+    font-family: 'l-medium';
+}
+
+
+.terreno b{
+    font-family: 'l-black';
+}
+
+.terreno p:nth-child(2) {
+    font-family: 'l-medium';
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .terreno p:first-child{
+        font-family: 'l-semibold';
+        font-size: 1.4rem;
+    }
+}

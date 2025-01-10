@@ -1,0 +1,140 @@
+.opcao-lazer {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    background-image: url('../image/planta/background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.title-opcao-lazer {
+    color: #B1B3B6;
+
+
+}
+
+.opcao-lazer .title{
+    font-family: 'b-bold';
+    color: red;
+}
+
+.opcao-lazer .subtitle{
+    color: var(--cor-preto);
+}
+
+.text-lazer {
+    display: grid;
+    flex-direction: 60%;
+    margin-top: 10px;
+    column-gap: 3%;
+    text-align: center;
+}
+
+.title-lazer {
+
+    font-family: 'b-bold';
+    color: #AD7D59 ;
+    font-size: 2rem;
+}
+
+.opcao-lazer .subtitle p {
+    color: var(--cor-preto);
+    font-family: 's-italic';
+    margin-bottom: 10px;
+}
+
+.text-lazer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #16263E;
+}
+
+.subtitle-lazer {
+    color: var(--cor-preto);
+   
+    font-size: 1.3rem;
+    padding: 20px;
+}
+
+.text-lazer li {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.text-lazer img {
+    margin-right: 10px;
+}
+
+.gallery-espaco {
+    width: 100% !important;
+    margin-top: 50px;
+}
+
+.text-lista-localizacao {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #636466;
+}
+
+.list-loc {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    color: #636466;
+}
+
+.list-loc li {
+    list-style: none;
+}
+
+.list-loc ul {
+    margin-left: 50px;
+}
+
+iframe {
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 782px) {
+    .text-lazer {
+        display: flex;
+        /* grid-template-columns: 25% 25% 25% 25%; */
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .opcao-lazer {
+        display: grid;
+        grid-template-columns: 90%;
+        justify-content: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: white;
+    }
+
+    .gallery-espaco {
+        width: 100% !important;
+        margin-top: 0px;
+    }
+
+    
+
+    .title-lazer {
+
+        font-size: 1.5rem !important;
+    }
+
+
+
+
+}
